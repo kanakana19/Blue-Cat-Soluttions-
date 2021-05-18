@@ -1,0 +1,288 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#headlogo{
+     width: 4rem;
+     height:4rem;
+     grid-area: logo;
+     margin: 1rem;    
+}
+
+
+div img{
+    height: 100%;
+    width: 100%
+}
+
+header{
+    display:grid;
+    grid-template-areas: 'title title'
+                         'desc desc'
+                         'logo nav';
+     color: #00bfff;
+
+}
+
+h1{
+    grid-area: title;
+    justify-self: center;
+    font-size: 6rem;
+}
+header p{
+    grid-area: desc;
+    justify-self: center;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+header nav{
+    grid-area: nav;
+    width: 55rem;
+    height: 2rem;
+    justify-self: end;
+    align-self: end;
+}
+
+#headlogo{
+    width: 2rem;
+    height:3rem;
+    grid-area: logo;
+    justify-self: start;
+    align-self: end;
+    margin: 1rem;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00bfff;
+}
+
+
+.operational{
+    display:grid;
+    grid-template-areas: 'software'
+                         'analysis'
+                         'ossint';
+    column-gap: 1rem;
+    row-gap: 1rem;
+    
+}
+
+.operational h2{
+    font-size: 4rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.operational p{
+    font-size: 2rem;
+    font-style: italic;
+    color: white; 
+}
+
+.software{
+    grid-area:software;
+    justify-self: center;
+    display: grid;
+    grid-template-areas: 'h2'
+                         'h2'
+                         'p';
+    background-image: url(/resources/main/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 15rem;
+    
+}
+
+.software h2{
+    grid-area: h2;
+    justify-self:center;
+    align-self:center;
+}
+
+.software p{
+    grid-area: p;
+    justify-self:center;
+    font-size: 2rem; 
+}
+
+.analysis{
+    grid-area:analysis;
+    justify-self: center;
+    display: grid;
+    grid-template-areas: 'h2'
+                         'h2'
+                         'p';
+    background-image: url(/resources/main/chris-liverani-dBI_My696Rk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width:100%;
+    height: 15rem;
+    
+}
+
+.analysis h2{
+    grid-area: h2;
+    justify-self:center;
+    align-self:center;
+}
+
+.analysis p{
+    grid-area: p;
+    justify-self:center;
+    align-self:center;
+}
+
+.ossint{
+    grid-area:ossint;
+    justify-self: center;
+    display: grid;
+    grid-template-areas: 'h2'
+                         'h2'
+                         'p';
+    background-image: url(/resources/main/sam-moqadam-yjr42Sepgis-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 15rem;
+      
+}
+
+.ossint h2{
+    grid-area: h2;
+    justify-self:center;
+    align-self:center;
+}
+
+.ossint p{
+    grid-area: p;
+    justify-self:center;
+    align-self:center;
+}
+.administrative{
+    display: grid;
+    grid-template-areas: 'about contact';
+    width:100%;
+    height: 15rem;
+    color: #0080ff;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+}
+
+.administrative h2{
+    color: white;
+    font-size: 3rem;
+    font-weight:bold;
+}
+
+.administrative p{
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.about{
+    grid-area:about;
+    justify-self:center;
+    display: grid;
+    grid-template-areas: 'h2'
+                         'h2'
+                         'p';
+    background-image: url(/resources/main/campaign-creators-gMsnXqILjp4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;  
+}
+
+.about h2{
+    grid-area: h2;
+    justify-self:center;
+    align-self:center;
+}
+
+.about p{
+    grid-area: p;
+    justify-self:center;
+    align-self:center; 
+}
+
+
+.contact{
+    grid-area:contact;
+    justify-self: center;
+    display: grid;
+    grid-template-areas: 'h2'
+                         'h2'
+                         'p';
+    background-image: url(/resources/main/coqui-chang-tnUp0OLSkDg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;      
+}
+
+.contact h2{
+    grid-area: h2;
+    justify-self:center;
+    align-self: center;
+}
+
+.contact p{
+    grid-area: p;
+    justify-self:center;
+    align-self: center; 
+}
+
+footer{
+    display:grid;
+    grid-template-areas: 'title title'                   
+                         'logo nav';
+    color: #00bfff;
+}
+
+#footlogo{
+    width: 2rem;
+    height:3rem;
+    grid-area:logo;
+    justify-self:start;
+    align-self: end;
+}
+
+#navfooter{
+    grid-area:nav;
+    justify-self: end;
+    width: 55rem;
+    height: 2rem;
+    align-self: end;
+}
+
+h3{
+    grid-area:title;
+    justify-self:center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+a{
+    color: #00bfff;
+    text-decoration: none;
+}
+
+
+
+
