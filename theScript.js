@@ -1,4 +1,4 @@
-alert('Kana Jambe!')
+//alert('Kana Jambe!')
 
 let navOver = document.getElementsByName('lielem');
 

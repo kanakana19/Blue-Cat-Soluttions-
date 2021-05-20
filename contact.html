@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Contact</title>
 </head>
 <body>
-    
+    <header>
+        <h1><a href='index.html'>Blue Cat Solutions</a></h1>
+        <p>Make informed decisions and grow your bussines with our professional it solutions</p>
+        <nav class='navbar' id="navheader">
+            <ul class='navlinks'>
+                <li name='lielem'><a href="software.html">Software Solutions</a></li>
+                <li name='lielem'><a href="/data.html">Data Analysis for Bussines</a></li>
+                <li name='lielem'><a href='/ossint.html'>OSSINT Solutions for Companies</a></li>
+                <li name='lielem'><a href='/about.html'>About Us</a></li>
+                <li name='lielem'><a href='/contact.html'>Contact Us</a></li>
+            </ul>
+        </nav>
+        <div id="headlogo">
+            <img src="/resources/main/simion-andreea-marina-oAjkdHyqzIE-unsplash.jpg" alt="Company Logo">
+        </div>
+    </header>
+    <main id="cntmain">
+       <div class="cntpic">
+           <img src="/resources/contact/joyce-busola-L9U5UUScnHY-unsplash.jpg" alt="pic">
+       </div>
+       <section class='cntform'>
+           <h2>Good day to you!</h2>
+           <form action="">
+            <label for="services">Please write bellow a short description of what kind of product would you need so than we can start working on an offer by the time we meet. Also please leave an e-mail adress or a phone number.</label><br>
+            <input type="text" id="services" name="services" maxlength="500"><br>
+            <input type="radio" id="software" name="service" value="soft">
+            <label for="soft">Software Products</label><br>
+            <input type="radio" id="data" name="service" value="analysis">
+            <label for='analysis'>Data Analysis</label><br>
+            <input type="radio" id="ossint" name="service" value="ossint">
+            <label for="ossint">OSSINT Services</label><br>
+            <input type="submit" value="Submit" class='subut'>
+            <input type="reset" class="subut">
+           </form>
+        </section>
+        <section class='cntinf'>
+            <h2>Contact Information</h2>
+            <p id="p1">You can also contact us at: 555-55555 and office@bluecat.com</p>
+            <p id='p2'>Or come to visit at: Bucharest, Kana Jambe Boulevard, no. 5, Sect. 9, Romania</p>
+        </section>
+    </main>
+    <footer>
+        <h3 id='lowerfirm'><a href='index.html'>Blue Cat Solutions</a></h3>
+        <nav class='navbar' id="navfooter">
+            <ul class='navlinks'>
+                <li name='lielem'><a href="software.html">Software Solutions</a></li>
+                <li name='lielem'><a href="/data.html">Data Analysis for Bussines</a></li>
+                <li name='lielem'><a href='/ossint.html'>OSSINT Solutions for Companies</a></li>
+                <li name='lielem'><a href='/about.html'>About Us</a></li>
+                <li name='lielem'><a href='/contact.html'>Contact Us</a></li>
+            </ul>
+        </nav>
+        <div id="footlogo">
+            <img src="/resources/main/simion-andreea-marina-oAjkdHyqzIE-unsplash.jpg" alt="Company Logo">
+        </div> 
+    </footer>
+    <script src="theScript.js"></script>
 </body>
 </html>

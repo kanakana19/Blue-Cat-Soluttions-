@@ -271,7 +271,7 @@ footer{
     align-self: end;
 }
 
-h3{
+#lowerfirm{
     grid-area:title;
     justify-self:center;
     font-size: 2rem;
@@ -284,5 +284,521 @@ a{
 }
 
 
+.mainsoft{
+    display:grid;
+    grid-template-areas: 'pic1 custom'
+                         'pic2 already';
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: AliceBlue;
+}
+
+.custpic{
+    grid-area:pic1;
+    width: 100%;
+    height:30rem;
+    border: 0.5rem solid azure;
+}
+
+.readypic{
+    grid-area:pic2;
+    width: 100%;
+    height:30rem;
+    border: 0.5rem solid azure;
+}
+
+.custom{
+    grid-area:custom;
+    display:grid;
+    grid-template-areas: 'h2'
+                          'p';
+}
+
+.already{
+    grid-area:already;
+    display:grid;
+    grid-template-areas: 'h2'
+                         'h2'
+                         'p'
+                         'li';
+}
+
+.custom h2{
+    align-self:end;
+    justify-self:center;
+    grid-area: h2;
+    color: slategray;
+    font-size:2rem;
+}
+
+.custom p{
+    align-self:center;
+    justify-self:center;
+    grid-area: p;
+    color: slategray;
+    font-size:1.5rem;
+    
+}
+
+.already h2{
+    align-self:center;
+    justify-self:center;
+    grid-area: h2;
+    color: slategray;
+    font-size:2rem;
+}
+
+.already p{
+    align-self:center;
+    justify-self:center;
+    grid-area: p;
+    color: slategray;
+    font-size:1.5rem;
+}
+
+.already ul{
+    align-self:center;
+    justify-self:center;
+    grid-area: li;
+    color: slategray;
+    font-size:2rem;
+}
 
 
+#maindata{
+    display:grid;
+    grid-template-areas: 'extpic extdata'
+                         'intpic intdata';
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: AliceBlue;
+}
+
+.extdatapic{
+    grid-area:extpic;
+    width: 100%;
+    height:30rem;
+    border: 0.5rem solid azure;
+}
+
+.intdatapic{
+    grid-area:intpic;
+    width: 100%;
+    height:30rem;
+    border: 0.5rem solid azure; 
+}
+
+
+.extdata{
+    display:grid;
+    grid-area:extdata;
+    grid-template-areas: 'h2'
+                         'p';
+}
+
+.intdata{
+    display:grid;
+    grid-area:intdata;
+    grid-template-areas: 'h2'
+                         'p';
+}
+
+.extdata h2{
+    align-self:end;
+    justify-self:center;
+    grid-area: h2;
+    color: slategray;
+    font-size:2rem;
+}
+
+.extdata p{
+    align-self:center;
+    justify-self:center;
+    grid-area: p;
+    color: slategray;
+    font-size:1.5rem;
+}
+
+.intdata h2{
+    align-self:end;
+    justify-self:center;
+    grid-area: h2;
+    color: slategray;
+    font-size:2rem;
+}
+
+.intdata p{
+    align-self:center;
+    justify-self:center;
+    grid-area: p;
+    color: slategray;
+    font-size:1.5rem;
+}
+
+#mainoss{
+    display:grid;
+    grid-template-areas: 'fenpic fenoss'
+                         'entpic entoss';
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: AliceBlue; 
+}
+
+.fenpic{
+    grid-area:fenpic;
+    width: 100%;
+    height:30rem;
+    border: 0.5rem solid azure;
+}
+
+.entpic{
+    grid-area:entpic;
+    width: 100%;
+    height:30rem;
+    border: 0.5rem solid azure; 
+}
+
+.fenoss{
+    display:grid;
+    grid-area:fenoss;
+    grid-template-areas: 'h2'
+                         'p';  
+}
+
+.entoss{
+    display:grid;
+    grid-area:entoss;
+    grid-template-areas: 'h2'
+                         'p';  
+}
+
+.fenoss h2{
+    align-self:end;
+    justify-self:center;
+    grid-area: h2;
+    color: slategray;
+    font-size:2rem;
+}
+
+.fenoss p{
+    align-self:center;
+    justify-self:center;
+    grid-area: p;
+    color: slategray;
+    font-size:1.5rem;
+}
+
+.entoss h2{
+    align-self:end;
+    justify-self:center;
+    grid-area: h2;
+    color: slategray;
+    font-size:2rem;
+}
+
+.entoss p{
+    align-self:center;
+    justify-self:center;
+    grid-area: p;
+    color: slategray;
+    font-size:1.5rem;
+}
+
+
+#mainabout{
+    display:grid;
+    grid-template-areas: 'maininfo'
+                         'mnginfo';
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: AliceBlue; 
+}
+
+.maininfo{
+    display:grid;
+    grid-area:maininfo;
+    grid-template-areas:'officepic compdescr';
+    column-gap: 1rem;
+    row-gap: 1rem;
+    height: 40rem;
+}
+
+.officepic{
+    grid-area:officepic;
+    height:30rem;
+    border: 0.5rem solid azure;
+}
+
+
+.officepic img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+
+.compdescr{
+    display:grid;
+    grid-area: compdescr;
+    height: 30rem;
+    grid-template-areas:'h2'
+                        'p';
+}
+
+.compdescr h2{
+    align-self:end;
+    justify-self:center;
+    grid-area: h2;
+    color: slategray;
+    font-size:3rem;
+}
+
+.compdescr p{
+    align-self:center;
+    justify-self:center;
+    grid-area: p;
+    color: slategray;
+    font-size:2rem;
+}
+
+.mnginfo{
+    display:grid;
+    grid-template-areas: 'genmng prodmng datamng ossmng';
+}
+
+.genmng{
+    display:grid;
+    grid-area:genmng;
+    grid-template-areas: 'genpic geninf';
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.genpic{
+    grid-area: genpic;
+    border: 0.5rem solid azure;
+}
+
+.geninf{
+    grid-area:geninf;
+    display:grid;
+    grid-template-areas:'h3'
+                         'p';
+}
+
+.geninf h3{
+    grid-area:h3;
+    align-self:end;
+    justify-self:center;
+    color: slategray;
+    font-size:2rem;
+    font-style:italic;
+}
+
+.geninf p{
+    grid-area:p;
+    align-self:center;
+    justify-self:center;
+    color: slategray;
+    font-size:1rem;
+}
+.prodmng{
+    display:grid;
+    grid-area:prodmng;
+    grid-template-areas:'prodpic prodinf';
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.prodpic{
+    grid-area:prodpic;
+    border: 0.5rem solid azure;
+}
+
+.prodinf{
+    display:grid;
+    grid-area:prodinf;
+    grid-template-areas:'h3'
+                        'p';
+}
+
+.prodinf h3{
+    grid-area:h3;
+    align-self:end;
+    justify-self:center;
+    color: slategray;
+    font-size:2rem;
+    font-style:italic;
+}
+
+.prodinf p{
+    grid-area:p;
+    align-self:center;
+    justify-self:center;
+    color: slategray;
+    font-size:1rem; 
+}
+
+.datamng{
+    display:grid;
+    grid-area:datamng;
+    grid-template-areas: 'datpic datinf';
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.datpic{
+    grid-area:datpic;
+    border: 0.5rem solid azure;
+}
+
+.datinf{
+    grid-area:datinf;
+    display:grid;
+    grid-template-areas:'h3'
+                        'p';
+}
+
+.datinf h3{
+    grid-area:h3;
+    align-self:end;
+    justify-self:center;
+    color: slategray;
+    font-size:2rem;
+    font-style:italic;
+}
+
+.datinf p {
+    grid-area:p;
+    align-self:center;
+    justify-self:center;
+    color: slategray;
+    font-size:1rem; 
+}
+.ossmng{
+    display:grid;
+    grid-area:ossmng;
+    grid-template-areas:'osspic ossinf';
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.osspic{
+    grid-area:osspic;
+    border: 0.5rem solid azure;
+}
+
+.ossinf{
+    display:grid;
+    grid-area: ossinf;
+    grid-template-areas:'h3'
+                        'p';
+}
+
+.ossinf h3{
+    grid-area:h3;
+    align-self:end;
+    justify-self:center;
+    color: slategray;
+    font-size:2rem;
+    font-style:italic; 
+}
+
+.ossinf p{
+    grid-area:p;
+    align-self:center;
+    justify-self:center;
+    color: slategray;
+    font-size:1rem; 
+}
+
+
+
+#cntmain{
+    display:grid;
+    grid-template-areas: 'cntpic cntform'
+                         'cntinf cntinf';
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: AliceBlue;
+    color: slategray;     
+}
+
+.cntpic{
+    grid-area:cntpic;
+    height:30rem;
+    border: 0.5rem solid azure;
+}
+
+.cntpic img{
+    height:100%;
+    width:100%;
+    object-fit:cover; 
+}
+
+.cntform{
+    display:grid;
+    grid-area:cntform;
+    grid-template-areas:'h2'
+                        'form';
+}
+
+.cntform h2{
+   grid-area: h2;
+   align-self:end;
+   justify-self:center;
+   color: slategray;
+   font-size:3rem;
+}
+
+.cntform form{
+    grid-area: form;
+    align-self:end;
+    justify-self:center;
+    color: slategray;
+    font-size:2rem;
+}
+
+#services{
+    height: 5rem;
+    width: 90%;
+}
+
+.cntinf{
+    display:grid;
+    grid-area:cntinf;
+}
+
+.subut{
+    height:3rem;
+    width:5rem;
+    color: slategray;
+    margin: 1rem;;
+}
+
+
+.cntinf{
+    display:grid;
+    grid-template-areas: 'h2 h2'
+                         'p1 p2';
+}
+
+.cntinf h2{
+    grid-area:h2;
+    align-self:center;
+    justify-self:center;
+    font-size: 2rem;
+}
+
+#p1{
+    grid-area:p1;
+    font-size: 2rem;
+    align-self:center;
+    justify-self:center;
+}
+
+#p2{
+    grid-area:p2;
+    font-size:2rem;
+    align-self:center;
+    justify-self:center;
+}
